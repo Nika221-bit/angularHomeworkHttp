@@ -1,0 +1,112 @@
+:host {
+  display: block;
+  padding: 1.5rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f8fc 0%, #eef2ff 100%);
+  color: #1f2937;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 360px);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 54px rgba(15, 23, 42, 0.14);
+}
+
+.product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.product-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product-heading h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: #111827;
+}
+
+.product-id {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.product-price {
+  color: #1d4ed8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.product-attributes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-attributes li {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(226, 232, 240, 0.8);
+  color: #334155;
+  font-size: 0.85rem;
+}
+
+.product-attributes li.available {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.empty-state {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  color: #1e3a8a;
+  text-align: center;
+  font-size: 1rem;
+}
